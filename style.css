@@ -20,6 +20,30 @@ body {
 .logo {
     max-width: 600px;
     margin-bottom: 24px;
-    
+}
+
+.container-input {
+    max-width: 480px;   /* I want this smaller than the logo */
+    margin: 14px 0;   /* 14px top and botom & 0 left and right */
+}
+
+.container-input span {
+    color: white;
+    font-size: 22px;
+}
+
+.slider {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #8a8a8afe;
+    height: 18px;
+    margin-top: 8px;
+    outline: none;
+}
+
+.button-cta {
+    height: 40px;
+    background-color: #2eb819;
+    border-radius: 5px;
 }
 
