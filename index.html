@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- head with meta dates starts here -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +11,29 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
+<!-- content structure starts here -->
 <body>
     
     <img class="logo" src="./assets/password_generator.png" alt="passwordd-generator"/>
 
-    <main class="container-input">
-        <span>Lenght <span id="value"></span> characters</span>
+<!-- input for password strengh -->
+<main class="container-input">
+        <span>Password <span id="value"></span>strength</span>
         <input id="slider" class="slider" type="range" min="5" max="25" value="15"/>
 
         <button id="button" class="button-cta">Generate Password</button>
     </main>
 
+    <div id="container-password" class="container-password hide">
+        <span class="title-password">Your generated Password was:</span>
+        
+        <!-- tooltip -->
+        <span id="generated-password" class="generated-password">1234473676566475</span>
+        <span>Click to copy 👆</span>
+    </div>
 
+<!-- script for javascript -->
     <script src="script.js"></script>
 </body>
 </html>
