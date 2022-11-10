@@ -17,3 +17,9 @@ body {
     flex-direction: column;
 }
 
+.logo {
+    max-width: 600px;
+    margin-bottom: 24px;
+    
+}
+
