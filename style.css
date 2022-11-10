@@ -17,11 +17,13 @@ body {
     flex-direction: column;
 }
 
+/* logo style */
 .logo {
     max-width: 600px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
+/* input style */
 .container-input {
     max-width: 480px;   /* I want this smaller than the logo */
     margin: 14px 0;   /* 14px top and botom & 0 left and right */
@@ -32,6 +34,7 @@ body {
     font-size: 22px;
 }
 
+/* track bar style */
 .slider {
     width: 100%;
     border-radius: 5px;
@@ -41,9 +44,61 @@ body {
     outline: none;
 }
 
+/* button style */
 .button-cta {
     height: 40px;
-    background-color: #2eb819;
+    background-color: #1eae08;
     border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 18px;
 }
 
+/* generated password container */
+.container-password {
+    max-width: 480px;
+    display: flex;
+    margin: 14px 0;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title-password {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.generated-password {
+    height: 60px;
+    background-color: #0f1b0b;
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid #313131;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+}
+
+.generated-password:hover {
+    transform: scale(1.06);
+}
+
+/* tooltip */
+.tooltip {
+    color: #fff;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: #1b1f17;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+}
