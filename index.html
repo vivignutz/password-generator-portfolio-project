@@ -17,18 +17,18 @@
     <img class="logo" src="./assets/password_generator.png" alt="passwordd-generator"/>
 
 <!-- input for password strengh -->
-<main class="container-input">
-        <span>Password <span id="value"></span>strength</span>
+    <div class="container-input">
+        <span>Password length <span id="value"></span> carachters</span>
         <input id="slider" class="slider" type="range" min="5" max="25" value="15"/>
 
-        <button id="button" class="button-cta"><b>Generate Password</b></button>
-    </main>
+        <button id="button" class="button-cta" onclick="generatePassword()">Generate Password</button>        
+    </div>
 
-    <div id="container-password" class="container-password hide">
-        <span class="title-password">Your generated Password was:</span>
+    <div id="container-password" onclick ="copyPassword()" class="container-password hide">
+        <span class="title-password">Your new Password is:</span>
         
         <!-- tooltip -->
-        <span id="generated-password" class="generated-password">1234473676566475</span>
+        <span id="" class="generated-password"></span>
         <span class="tooltip">Click to copy 👆</span>
     </div>
 
